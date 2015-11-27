@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
 
   s.source_files = 'Elysian/**/*.swift'
-  s.dependency 'Curvature', '0.1'
+  s.dependency 'Curvature', '0.1.1'
   s.dependency 'Medea', '0.1'
 
   s.requires_arc = true
