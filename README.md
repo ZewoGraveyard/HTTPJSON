@@ -1,15 +1,15 @@
-Elysian
-=======
+HTTPJSON
+========
 
 [![Swift 2.1](https://img.shields.io/badge/Swift-2.1-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![Platforms OS X | iOS](https://img.shields.io/badge/Platforms-OS%20X%20%7C%20iOS-lightgray.svg?style=flat)](https://developer.apple.com/swift/)
-[![Cocoapods Compatible](https://img.shields.io/badge/Cocoapods-Compatible-4BC51D.svg?style=flat)](https://cocoapods.org/pods/Elysian)
+[![Cocoapods Compatible](https://img.shields.io/badge/Cocoapods-Compatible-4BC51D.svg?style=flat)](https://cocoapods.org/pods/HTTPJSON)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-Compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Travis](https://img.shields.io/badge/Build-Passing-4BC51D.svg?style=flat)](https://travis-ci.org/Zewo/Elysian)
-[![codecov.io](http://codecov.io/github/Zewo/Elysian/coverage.svg?branch=master)](http://codecov.io/github/Zewo/Elysian?branch=master)
+[![Travis](https://img.shields.io/badge/Build-Passing-4BC51D.svg?style=flat)](https://travis-ci.org/Zewo/HTTPJSON)
+[![codecov.io](http://codecov.io/github/Zewo/HTTPJSON/coverage.svg?branch=master)](http://codecov.io/github/Zewo/HTTPJSON?branch=master)
 
-**Elysian** provides HTTP request/response + JSON for **Swift 2**.
+**HTTPJSON** provides HTTP request/response + JSON for **Swift 2**.
 
 ## Features
 
@@ -18,9 +18,10 @@ Elysian
 ## Usage
 
 ```swift
-import Curvature
-import Medea
-import Elysian
+import URI
+import HTTP
+import JSON
+import HTTPJSON
 
 let json: JSON = [
     "foo": "bar"
@@ -40,16 +41,18 @@ let response = HTTPResponse(status: .OK, json: json)
 $ gem install cocoapods
 ```
 
-> CocoaPods 0.39.0+ is required to build Elysian.
+> CocoaPods 0.39.0+ is required to build HTTPJSON.
 
-To integrate **Elysian** into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate **HTTPJSON** into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
+source 'https://github.com/Zewo/Specs.git' # Don't forget this
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-pod 'Elysian', '0.1'
+pod 'HTTPJSON', '0.1'
 ```
+> **WARNING:** Don't forget  `source 'https://github.com/Zewo/Specs.git'`. This is very important. It should always come before the official CocoaPods repo.
 
 Then, run the following command:
 
@@ -68,15 +71,15 @@ $ brew update
 $ brew install carthage
 ```
 
-To integrate **Elysian** into your Xcode project using Carthage, specify it in your `Cartfile`:
+To integrate **HTTPJSON** into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "Zewo/Elysian" == 0.1
+github "Zewo/HTTPJSON" == 0.1
 ```
 
 ### Command Line Application
 
-To use **Elysian** in a command line application:
+To use **HTTPJSON** in a command line application:
 
 - Install the [Swift Command Line Application](https://github.com/Zewo/Swift-Command-Line-Application-Template) Xcode template
 - Follow [Cocoa Pods](#cocoapods) or [Carthage](#carthage) instructions.
@@ -84,4 +87,4 @@ To use **Elysian** in a command line application:
 License
 -------
 
-**Elysian** is released under the MIT license. See LICENSE for details.
+**HTTPJSON** is released under the MIT license. See LICENSE for details.

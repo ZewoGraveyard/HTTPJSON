@@ -1,4 +1,4 @@
-// ElysianTests.swift
+// HTTPJSONTests.swift
 //
 // The MIT License (MIT)
 //
@@ -23,11 +23,12 @@
 // SOFTWARE.
 
 import XCTest
-import Curvature
-import Medea
-import Elysian
+import URI
+import HTTP
+import JSON
+import HTTPJSON
 
-class FuzzTests: XCTestCase {
+class HTTPJSONTests: XCTestCase {
     func test() {
         let json: JSON = [
             "foo": "bar"

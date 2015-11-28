@@ -1,5 +1,8 @@
-[submodule "Carthage/Checkouts/Curvature"]
-	url = https://github.com/Zewo/Curvature.git
-[submodule "Carthage/Checkouts/Medea"]
-	path = Carthage/Checkouts/Medea
-	url = https://github.com/Zewo/Medea.git
+[submodule "HTTP"]
+	path = HTTP
+	url = https://github.com/Zewo/HTTP
+	branch = master
+[submodule "JSON"]
+	path = JSON
+	url = https://github.com/Zewo/JSON.git
+	branch = master

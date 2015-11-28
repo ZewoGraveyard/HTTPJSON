@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B00510E91BE9952D001B3F26"
-               BuildableName = "Elysian.framework"
-               BlueprintName = "Elysian iOS"
-               ReferencedContainer = "container:Elysian.xcodeproj">
+               BlueprintIdentifier = "B005109A1BE97B7B001B3F26"
+               BuildableName = "HTTPJSON.framework"
+               BlueprintName = "HTTPJSON OSX"
+               ReferencedContainer = "container:HTTPJSON.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,20 +33,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B00510F21BE9952D001B3F26"
-               BuildableName = "ElysianTests.xctest"
-               BlueprintName = "Elysian iOS Tests"
-               ReferencedContainer = "container:Elysian.xcodeproj">
+               BlueprintIdentifier = "B00510A41BE97B7B001B3F26"
+               BuildableName = "HTTPJSONTests.xctest"
+               BlueprintName = "HTTPJSON OSX Tests"
+               ReferencedContainer = "container:HTTPJSON.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B00510E91BE9952D001B3F26"
-            BuildableName = "Elysian.framework"
-            BlueprintName = "Elysian iOS"
-            ReferencedContainer = "container:Elysian.xcodeproj">
+            BlueprintIdentifier = "B005109A1BE97B7B001B3F26"
+            BuildableName = "HTTPJSON.framework"
+            BlueprintName = "HTTPJSON OSX"
+            ReferencedContainer = "container:HTTPJSON.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +65,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B00510E91BE9952D001B3F26"
-            BuildableName = "Elysian.framework"
-            BlueprintName = "Elysian iOS"
-            ReferencedContainer = "container:Elysian.xcodeproj">
+            BlueprintIdentifier = "B005109A1BE97B7B001B3F26"
+            BuildableName = "HTTPJSON.framework"
+            BlueprintName = "HTTPJSON OSX"
+            ReferencedContainer = "container:HTTPJSON.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,10 +83,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B00510E91BE9952D001B3F26"
-            BuildableName = "Elysian.framework"
-            BlueprintName = "Elysian iOS"
-            ReferencedContainer = "container:Elysian.xcodeproj">
+            BlueprintIdentifier = "B005109A1BE97B7B001B3F26"
+            BuildableName = "HTTPJSON.framework"
+            BlueprintName = "HTTPJSON OSX"
+            ReferencedContainer = "container:HTTPJSON.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

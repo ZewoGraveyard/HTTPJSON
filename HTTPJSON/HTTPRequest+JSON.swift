@@ -22,8 +22,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import Curvature
-import Medea
+import URI
+import HTTP
+import JSON
 
 extension HTTPRequest {
     public init(method: HTTPMethod, uri: URI, var headers: [String: String] = [:], json: JSON) {
