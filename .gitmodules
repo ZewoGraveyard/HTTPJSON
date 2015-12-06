@@ -1,8 +1,0 @@
-[submodule "HTTP"]
-	path = HTTP
-	url = https://github.com/Zewo/HTTP
-	branch = master
-[submodule "JSON"]
-	path = JSON
-	url = https://github.com/Zewo/JSON.git
-	branch = master
