@@ -26,7 +26,8 @@ import HTTP
 import JSON
 
 extension HTTPResponse {
-    public init(status: HTTPStatus, var headers: [String: String] = [:], json: JSON) {
+    public init(status: HTTPStatus, headers: [String: String] = [:], json: JSON) {
+    	var headers = headers
         headers["content-type"] = "application/json; charset=utf-8"
         self.init(
             status: status,

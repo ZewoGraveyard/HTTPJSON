@@ -27,7 +27,8 @@ import HTTP
 import JSON
 
 extension HTTPRequest {
-    public init(method: HTTPMethod, uri: URI, var headers: [String: String] = [:], json: JSON) {
+    public init(method: HTTPMethod, uri: URI, headers: [String: String] = [:], json: JSON) {
+    	var headers = headers
         headers["content-type"] = "application/json; charset=utf-8"
         self.init(
             method: method,
