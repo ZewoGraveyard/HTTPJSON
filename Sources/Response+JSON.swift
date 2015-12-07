@@ -1,4 +1,4 @@
-// HTTPRequest+JSON.swift
+// Response+JSON.swift
 //
 // The MIT License (MIT)
 //
@@ -22,17 +22,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import URI
-import HTTP
-import JSON
+import struct HTTP.Response
+import enum HTTP.Status
+import enum JSON.JSON
 
-extension HTTPRequest {
-    public init(method: HTTPMethod, uri: URI, headers: [String: String] = [:], json: JSON) {
+extension Response {
+    public init(status: Status, headers: [String: String] = [:], json: JSON) {
     	var headers = headers
         headers["content-type"] = "application/json; charset=utf-8"
         self.init(
-            method: method,
-            uri: uri,
+            status: status,
             headers: headers,
             body: json.description.utf8.map({Int8($0)})
         )
