@@ -33,7 +33,7 @@ extension Response {
         self.init(
             status: status,
             headers: headers,
-            body: json.description.utf8.map({Int8($0)})
+            body: json.description.data
         )
     }
 }
