@@ -22,20 +22,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import struct HTTP.Request
-import enum HTTP.Method
-import struct URI.URI
-import enum JSON.JSON
+@_exported import HTTP
+@_exported import JSON
 
 extension Request {
-    public init(method: Method, uri: URI, headers: [String: String] = [:], json: JSON) {
-    	var headers = headers
+    public init(method: Method = .GET, uri: URI = URI(path: "/"), headers: Headers = [:], json: JSON, upgrade: Upgrade? = nil) {
+        var headers = headers
         headers["content-type"] = "application/json; charset=utf-8"
         self.init(
             method: method,
             uri: uri,
             headers: headers,
-            body: json.description.data
+            body: json.description,
+            upgrade: upgrade
         )
     }
 }
