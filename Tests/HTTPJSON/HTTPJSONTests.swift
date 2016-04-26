@@ -8,7 +8,7 @@ class HTTPJSONTests: XCTestCase {
 }
 
 extension HTTPJSONTests {
-    static var allTests : [(String, HTTPJSONTests -> () throws -> Void)] {
+    static var allTests: [(String, HTTPJSONTests -> () throws -> Void)] {
         return [
            ("testReality", testReality),
         ]
