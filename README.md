@@ -6,6 +6,7 @@
 [![License][mit-badge]][mit-url]
 [![Slack][slack-badge]][slack-url]
 [![Travis][travis-badge]][travis-url]
+[![Codebeat][codebeat-badge]][codebeat-url]
 
 **HTTPJSON** provides HTTP request/response + JSON for **Swift 2**.
 
@@ -61,3 +62,5 @@ This project is released under the MIT license. See [LICENSE](LICENSE) for detai
 [slack-url]: http://slack.zewo.io
 [travis-badge]: https://travis-ci.org/Zewo/HTTPJSON.svg?branch=master
 [travis-url]: https://travis-ci.org/Zewo/HTTPJSON
+[codebeat-badge]: https://codebeat.co/badges/d2371328-8dc8-4b05-995c-461b9518ec15
+[codebeat-url]: https://codebeat.co/projects/github-com-zewo-httpjson
