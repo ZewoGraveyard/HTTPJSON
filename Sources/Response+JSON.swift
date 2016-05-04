@@ -27,7 +27,8 @@ import enum HTTP.Status
 import enum JSON.JSON
 
 extension Response {
-    public init(status: Status = .ok, headers: Headers = [:], json: JSON, didUpgrade: DidUpgrade? = nil) {
+    public init(status: Status = .ok, headers: Headers = [:], json: JSON,
+                didUpgrade: DidUpgrade? = nil) {
         var headers = headers
         headers["content-type"] = "application/json; charset=utf-8"
         self.init(
