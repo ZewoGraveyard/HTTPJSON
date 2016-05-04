@@ -26,7 +26,7 @@
 @_exported import JSON
 
 extension Request {
-    public init(method: Method = .get, uri: URI = URI(path: "/"), headers: Headers = [:], json: JSON, upgrade: Upgrade? = nil) {
+    public init(method: Method = .get, uri: URI = URI(path: "/"), headers: Headers = [:], json: JSON, didUpgrade: DidUpgrade? = nil) {
         var headers = headers
         headers["content-type"] = "application/json; charset=utf-8"
         self.init(
@@ -34,7 +34,7 @@ extension Request {
             uri: uri,
             headers: headers,
             body: json.description,
-            upgrade: upgrade
+            didUpgrade: didUpgrade
         )
     }
 }
